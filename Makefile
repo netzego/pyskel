@@ -3,7 +3,7 @@
 all: install
 
 run:
-	./venv/bin/pyskel
+	@./venv/bin/pyskel
 
 clean:
 	rm -fr */__pycache__
