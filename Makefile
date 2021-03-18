@@ -1,4 +1,4 @@
-.PHONY: all clean run venv
+.PHONY: all clean run venv distclean install
 
 all: install
 
@@ -9,7 +9,7 @@ clean:
 	rm -fr */__pycache__
 	rm -fr *.egg-info
 
-distclean:
+distclean: clean
 	rm -fr venv
 
 install: venv
